@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/Image";
 
 const Feature = () => {
   const FeatureImg = [
@@ -33,7 +32,7 @@ const Feature = () => {
           return (
             <>
               <div className=" flex relative" key={id}>
-                <Image
+                <img
                   src={el.img}
                   alt="card1"
                   width={380}
