@@ -1,0 +1,39 @@
+import React from 'react'
+
+const Why = () => {
+    const whyDetails=[
+        {
+            heading:"Drastically reduces or even eliminates your electric bills.",
+            paragraph:"Electricity costs can make up a large portion of your monthly expenses. With a solar panel system, you’ll generate free power for your system’s entire 25+ year lifespan. Even if you don’t produce 100 percent of the energy you consume, solar still reduces your utility bills, meaning you’ll save a lot of money."
+        },
+        {
+            heading:"Drastically reduces or even eliminates your electric bills.",
+            paragraph:"Electricity costs can make up a large portion of your monthly expenses. With a solar panel system, you’ll generate free power for your system’s entire 25+ year lifespan. Even if you don’t produce 100 percent of the energy you consume, solar still reduces your utility bills, meaning you’ll save a lot of money."
+        },{
+            heading:"Drastically reduces or even eliminates your electric bills.",
+            paragraph:"Electricity costs can make up a large portion of your monthly expenses. With a solar panel system, you’ll generate free power for your system’s entire 25+ year lifespan. Even if you don’t produce 100 percent of the energy you consume, solar still reduces your utility bills, meaning you’ll save a lot of money."
+        }
+    ]
+  return (
+    <div className='h-screen w-full bg-white'>
+        <div className='w-full border-2 border-black flex justify-center h-[80%] items-center'>
+        {/* left section */}
+        <div className='w-[30%] border-2 border-black flex justify-center h-[80%]'>
+            <h1 className='text-2xl'>WHY</h1>
+        </div>
+        <div className='w-[30%] border-2 border-black  h-[500px]'>
+        {whyDetails.map((el, id) => {
+             return (
+                <div className=' flex gap-5 flex-col' key={id}>
+            <h1 className='text-1xl font-bold'>{el.heading}</h1>
+            <h2>{el.paragraph}</h2>
+            </div>
+            );
+            })}
+        </div>
+        </div>
+    </div>
+  )
+}
+
+export default Why;
