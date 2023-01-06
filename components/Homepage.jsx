@@ -4,7 +4,7 @@ const Homepage = () => {
   return (
     <section className="bg-[#ece7e4] grid lg:grid-cols-2 mt-32 justify-items-center items-center">
       <div className="flex flex-col flex-wrap px-12 w-auto md:w-[35rem] lg:[30rem]">
-        <p className="text-gray py-10 font-bold">KIN HOME</p>
+        <p className="text-[#645c55] py-7 font-semibold">KIN HOME</p>
         <h1 className="mb-2 text-5xl md:text-6xl lg:text-7xl text-black font-bold ">
           Power your home with confidence
         </h1>
