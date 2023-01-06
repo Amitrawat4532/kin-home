@@ -6,21 +6,25 @@ const Testimonal = () => {
       img: "images/review1.jpeg",
       name: "Stephen Andersen",
       profession: " Chief Marketing Officer ",
+      alt: "review1",
     },
     {
       img: "images/review2.jpeg",
       name: "Blake Corbin",
       profession: "Chief Finance Officer",
+      alt: "review2",
     },
     {
       img: "images/review3.jpeg",
       name: "Austin Elkes",
       profession: "Chief Executive Officer",
+      alt: "review3",
     },
     {
       img: "images/review4.jpeg",
       name: "James Toolill",
       profession: "Chief Operating Officer",
+      alt: "review4",
     },
   ];
   return (
@@ -42,8 +46,6 @@ const Testimonal = () => {
         </div>
         {/* container right */}
         <div className=" w-full md:w-[60%] h-full flex flex-wrap items-center gap-4 md:gap-6  ">
-          {/* <div className="border-2 border-black flex"> */}
-
           {Reviewsdata.map((el, id) => {
             return (
               <div
@@ -52,6 +54,7 @@ const Testimonal = () => {
               >
                 <img
                   src={el.img}
+                  alt={el.alt}
                   className="rounded-[100%] border-[3px] border-[#cec4bc] w-24 h-24 object-cover"
                 />
                 <div className=" flex flex-col justify-center items-start  ">
@@ -65,7 +68,6 @@ const Testimonal = () => {
           })}
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

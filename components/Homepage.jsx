@@ -18,7 +18,6 @@ const Homepage = () => {
         </button>
       </div>
       <div className="">
-        {/* eslint-disable-next-line @next/next/no-img-element  */}
         <img src="images/bg.jpeg" className="static" alt="banner" />
       </div>
     </section>

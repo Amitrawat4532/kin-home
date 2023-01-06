@@ -29,9 +29,7 @@ const Ourprocess = () => {
         src="images/ourprocessimg.jpeg"
         alt="family img"
       />
-      <h4 className="mt-20 tracking-widest font-medium text-gray ">
-        OUR PROCESS
-      </h4>
+      <h4 className="mt-20  font-medium text-gray ">OUR PROCESS</h4>
       <h2 className="text-5xl font-semibold my-6 text-black">
         How we do what we do.
       </h2>
@@ -40,7 +38,7 @@ const Ourprocess = () => {
           return (
             <div key={id} className="lg:w-[300px]">
               <Image src={el.image} height={102} width={102} alt="pp" />
-              <h4 className="text-primary text-lg my-3 font-semibold ">
+              <h4 className="text- text-black my-3 font-semibold ">
                 {el.heading}
               </h4>
               <p className="text-gray text-base my-3 px-4">{el.paragraph}</p>

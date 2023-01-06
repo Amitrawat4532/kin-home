@@ -23,23 +23,6 @@ const Getintouch = () => {
         <h1>All rights reserved Kin Home, inc.</h1>
       </div>
     </div>
-    // <div className="h-[screen] sm:h-screen w-full">
-    //   {/* upContainer */}
-    //   <div className="w-full bg-[#cec4bc] h-[50%] flex flex-col justify-center items-center">
-    //     <h1 className="self-start md:pl-[200px]">GET IN TOUCH</h1>
-    //     <div className="flex sm:gap-52">
-    //       {" "}
-    //       <h2 className="text-5xl">
-    //         Think we would be a good fit for
-    //         <br /> your solar solution?
-    //       </h2>
-    //       <button className="w-[220px] rounded-2xl h-[45px]  border-4 border-black ">
-    //         View All Projects
-    //       </button>
-    //     </div>
-    //   </div>
-    //
-    // </div>
   );
 };
 

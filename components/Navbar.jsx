@@ -45,26 +45,6 @@ const Navbar = () => {
         alt="mob-menu"
       />
     </div>
-    // <header className="flex justify-around items-center h-32 shadow-nav z-20  px-8 fixed top-0 bg-white w-full">
-    //   <Link href={"#"}>
-    //     <Image src="/images/logo.png" alt="logo" height={115} width={220} />
-    //   </Link>
-    //   <ul className="hidden md:flex gap-8 text-black hover:text-red-700 items-center font-medium">
-    //     {navData.map((el, id) => {
-    //       return (
-    //         <li
-    //           key={id}
-    //           className="
-    //             px-4 py-3 bg-primary-dark text-backlight rounded-2xl hover:opacity-80"
-    //
-    //         >
-    //           <Link href={el.href}>{el.name}</Link>
-    //         </li>
-    //       );
-    //     })}
-    //   </ul>
-    //   {/* <h1>i am hamb btn </h1> */}
-    // </header>
   );
 };
 
