@@ -1,11 +1,33 @@
 import React from "react";
 
 const Testimonal = () => {
+  const Reviewsdata = [
+    {
+      img: "images/review1.jpeg",
+      name: "Stephen Andersen",
+      profession: " Chief Marketing Officer ",
+    },
+    {
+      img: "images/review2.jpeg",
+      name: "Blake Corbin",
+      profession: "Chief Finance Officer",
+    },
+    {
+      img: "images/review3.jpeg",
+      name: "Austin Elkes",
+      profession: "Chief Executive Officer",
+    },
+    {
+      img: "images/review4.jpeg",
+      name: "James Toolill",
+      profession: "Chief Operating Officer",
+    },
+  ];
   return (
-    <div className="h-[500px] w-full flex justify-center ">
-      <div className="w-[80%] flex">
+    <div className="h-full w-full flex justify-center ">
+      <div className="w-[full] flex flex-col md:flex-row gap-6 md:gap-0">
         {/* container-left */}
-        <div className=" w-[40%] border-2 border-black h-[400px] flex flex-col justify-center gap-5">
+        <div className=" w-[90%] sm:w-[40%]   sm:pl-36   h-[90%] sm:h-[400px] flex flex-col justify-center gap-5 m-auto ">
           <h1 className="text-3xl font-bold">Meet our team</h1>
           <p>
             Meet some of the industries top tier talent. Since the beginning we
@@ -14,13 +36,36 @@ const Testimonal = () => {
             attracted the best of the best and are continuing to build our team
             to ensure our customers always come first.
           </p>
-          <button className="w-[120px] rounded-2xl h-[45px]  border-4 border-black ">
+          <button className="w-[120px] rounded-2xl h-[45px]  border-[3.5px] border-black font-bold  hover:bg-black hover:text-white">
             See Team
           </button>
         </div>
         {/* container right */}
-        <div className="w-[60%] border-black border-2"></div>
+        <div className=" w-full md:w-[60%] h-full flex flex-wrap items-center gap-4 md:gap-6  ">
+          {/* <div className="border-2 border-black flex"> */}
+
+          {Reviewsdata.map((el, id) => {
+            return (
+              <div
+                className=" flex  flex-col md:flex-row justify-start items-center  w-full  md:w-[40%] h-[25%] gap-6 md:gap-6 "
+                key={id}
+              >
+                <img
+                  src={el.img}
+                  className="rounded-[100%] border-[3px] border-[#cec4bc] w-24 h-24 object-cover"
+                />
+                <div className=" flex flex-col justify-center items-start  ">
+                  <h1 className=" font-bold">{el.name}</h1>
+                  <h2 className=" text-[#645c55] text-[12px]">
+                    {el.profession}
+                  </h2>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };

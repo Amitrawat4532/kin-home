@@ -2,32 +2,26 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <div className="h-screen w-full bg-white flex  items-center ">
-      <div className=" bg-[#ece7e4] h-[550px] flex ">
-        {/* section left */}
-        <div className="h-[100%] w-[50%]   flex  justify-center items-center ">
-          <div className="flex flex-col  justify-center gap-6  w-[60%] h-[90%]">
-            <h2 className="text-[#645c55] text-1xl font-medium">KIN HOME</h2>
-            <h1 className="text-[64px] font-bold leading-none">
-              Power your home with confidence
-            </h1>
-            <h3 className="text-[18px]">
-              Going solar has never been easier, but with so many options it's
-              important to choose the right one. At Kin Home, we are constantly
-              striving to provide the best customer experience imaginable.
-            </h3>
-            <button className="w-[120px] rounded-2xl h-[45px]  border-4 border-black ">
-              get started
-            </button>
-          </div>
-        </div>
-        {/* right section */}
-
-        <div className="h-full w-[50%] bg-[#ece7e4] flex justify-end items-center">
-          <img src="/images/bg.jpeg" alt="image" className="h-[470px]" />
-        </div>
+    <section className="bg-[#ece7e4] grid lg:grid-cols-2 mt-32 justify-items-center items-center">
+      <div className="flex flex-col flex-wrap px-12 w-auto md:w-[35rem] lg:[30rem]">
+        <p className="text-gray py-10 font-bold">KIN HOME</p>
+        <h1 className="mb-2 text-5xl md:text-6xl lg:text-7xl text-black font-bold ">
+          Power your home with confidence
+        </h1>
+        <p className=" text-primary text-base">
+          Going solar has never been easier, but with so many options it&apos;s
+          important to choose the right one. At Kin Home, we are constantly
+          striving to provide the best customer experience imaginable.
+        </p>
+        <button className="border-[3.5px] font-medium rounded-xl border-black w-fit px-4 py-2 my-12  hover:bg-black hover:text-white">
+          Get Started
+        </button>
       </div>
-    </div>
+      <div className="">
+        {/* eslint-disable-next-line @next/next/no-img-element  */}
+        <img src="images/bg.jpeg" className="static" alt="banner" />
+      </div>
+    </section>
   );
 };
 
