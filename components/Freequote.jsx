@@ -3,8 +3,8 @@ import React from "react";
 const Freequote = () => {
   return (
     <>
-      <div className="h-[400px] w-full bg-white ">
-        <div className="h-[400px] w-full flex justify-center items-center flex-col gap-10 pl-4">
+      <div className="p-[40px] bg-white ">
+        <div className=" w-full flex justify-center items-center flex-col gap-10 pl-4">
           <h1 className="text-[40px] font-[500]">How much does it cost? ‍</h1>
           <h1 className="text-[24px]  text-[#645c55]">
             Most customers save money every month by going solar with Kin Home.‍

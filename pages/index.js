@@ -1,4 +1,5 @@
 import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 import Freequote from "../components/Freequote";
 import Getintouch from "../components/Getintouch";
 import Happycustomer from "../components/Happycustomer";
@@ -12,7 +13,7 @@ import Why from "../components/Why";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Homepage />
       <Why />
       <Ourprocess />
@@ -21,6 +22,7 @@ export default function Home() {
       <Feature />
       <Testimonal />
       <Getintouch />
+      <Footer />{" "}
     </>
   );
 }
